@@ -29,6 +29,24 @@ const PostSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+  price:{
+    type:Number,
+    required:true,
+  },
+  completed:{
+    type:Boolean,
+    default:false,
+  },
+  expired:{
+    type:Boolean,
+    default:false,
+  },
+  address:{
+    type:String,
+    required:true,
+
+  }
+
 });
 
 module.exports = mongoose.model("Post", PostSchema);

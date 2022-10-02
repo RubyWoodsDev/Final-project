@@ -7,9 +7,9 @@
                         <div class="alert alert-danger"><%= el.msg %></div>
                     <% }) %>    
                 <% } %>
-                <% if (locals.messages.info) { %>
-                    <% messages.info.forEach( el => { %>
-                        <div class="alert alert-info"><%= el.msg %></div>
+                <% if (locals.messages.success) { %>
+                    <% messages.success.forEach( el => { %>
+                        <div class="alert alert-successs"><%= el.msg %></div>
                     <% }) %>    
                 <% } %>
                 <form action="/signup" method="POST">
@@ -30,6 +30,8 @@
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
+                      <input type="radio"name="type" id="customer" value="customer"> <label for="customer">customer</label>
+                      <input type="radio"name="type" id="provider" value="provider"> <label for="provider">provider</label>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
             </section>

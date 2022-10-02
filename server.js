@@ -27,11 +27,11 @@ app.set("view engine", "ejs");
 //Static Folder
 app.use(express.static("public"));
 
-//Body Parsing
+//Body Parsing-telling the server the types of data to be sent and recieved
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-//Logging
+//Logging- want more information because of developer mode
 app.use(logger("dev"));
 
 //Use forms for put / delete
