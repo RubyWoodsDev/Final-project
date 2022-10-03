@@ -30,8 +30,14 @@
                         <label for="confirmPassword" class="form-label">Confirm Password</label>
                         <input type="password" class="form-control" id="confirmPassword" name="confirmPassword">
                       </div>
-                      <input type="radio"name="type" id="customer" value="customer"> <label for="customer">customer</label>
-                      <input type="radio"name="type" id="provider" value="provider"> <label for="provider">provider</label>
+                      <!-- <input type="radio"name="type" id="customer" value="customer"> <label for="customer">customer</label>
+                      <input type="radio"name="type" id="provider" value="provider"> <label for="provider">provider</label>  commenting out not working on test is because the name attribute is the same-->
+                      <label for="type">type</label>
+                    <select class="form-select" name="type" id="type">
+                        <option value="customer">customer</option>
+                        <option value="provider">provider</option>
+                      
+                    </select>
                     <button type="submit" class="btn btn-primary">Submit</button>
                   </form>
             </section>
