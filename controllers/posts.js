@@ -21,7 +21,7 @@ module.exports = {
   },
   getPost: async (req, res) => {
     try {
-      const post = await Post.findById(req.params.id);
+      const post = await Post.findById(req.params.id).populate("user");
       console.log(post.user)
       const comment = await Comment.find({post:req.params.id}).sort
             ({createdAt:"desc"}).lean();

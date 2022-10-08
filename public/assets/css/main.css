@@ -3897,3 +3897,6 @@ input, select, textarea {
 	.profile{
 		margin-right: 20px;
 	}
+	.description{
+		border: 2px solid #49fcd4;
+	}
