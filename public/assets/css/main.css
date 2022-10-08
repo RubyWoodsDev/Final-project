@@ -3880,3 +3880,20 @@ input, select, textarea {
 		}
 
 	}
+	nav ul{
+		list-style-type: none;
+		display:flex;
+		/* border:1px solid red */
+		justify-content: center;
+		gap: 20px;
+	}
+	ul.list-unstyled{
+		list-style-type: none;
+	}
+	img.img-fluid{
+		width:100%;
+		height:auto
+	}
+	.profile{
+		margin-right: 20px;
+	}
