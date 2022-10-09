@@ -84,12 +84,14 @@ exports.postSignup = (req, res, next) => {
     gmail_remove_dots: false,
   
   });
-
+console.log(req.body)
   const user = new User({
     userName: req.body.userName,
     email: req.body.email,
     password: req.body.password,
-    usertype:req.body.usertype
+    usertype: req.body.usertype,
+    servicetype: req.body.servicetype,
+    urgencytype: req.body.urgencytype
   });
 
   User.findOne(

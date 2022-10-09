@@ -7,6 +7,9 @@ module.exports = {
     try {
       const posts = await Post.find({ user: req.user.id });
       res.render("profile.ejs", { posts: posts, user: req.user });
+      // if (req.user.usertype === "provider"){
+        //work on my logic of I want it to do
+      // }
     } catch (err) {
       console.log(err);
     }
