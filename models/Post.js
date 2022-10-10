@@ -46,6 +46,7 @@ const PostSchema = new mongoose.Schema({
     required:true,
 
   }
+  
 
 });
 
