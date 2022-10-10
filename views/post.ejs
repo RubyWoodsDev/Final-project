@@ -19,8 +19,12 @@
         <h3 class="col-3">Likes: <%= post.likes %></h3>
         <div class="description col-3 mt-5">
           <h3> description</h3>
-
-          <p><%= post.user.userName %>: <%= post.caption %></p>
+          <p>
+            <%= post.user.userName %> 
+            <% if (post.user.usertype === "provider") {%><i class="fa fa-snowplow" title="Provider"></i><%}%>
+            <% if (post.user.usertype === "customer") {%><i class="fa fa-snowflake" title="Customer"></i><%}%>
+            <%= post.caption %>
+        </p>
         </div>
         <%if(post.user == user.id){ %>
         <form
